@@ -1,0 +1,24 @@
+---
+title: "About this Application"
+output: html_document
+---
+
+This R Shiny application deals with french first names.  
+
+We use an open data file (disponible here : <https://www.data.gouv.fr/fr/datasets/les-prenoms-des-petits-francais/>) which contains the first names given to the children born in the french cities of Rennes, Strasbourg, Nantes, Toulouse, from 2002 to 2012. These data come from the civil registries of the municipalities adhering to the association Open data France. For reasons of respecting the anonymity of the persons, this file does not publish the first names whose occurrence is less than 5.  
+
+The first names have been retreated to replace french accents or special characters, and are rewritten in uppercase so you can indifferently enter a first name in uppercase or lowercase.   
+
+At first the R Shiny app requires the user to enter a first name and then to tick the box(es) corresponding to a city(ies).  
+
+Then, automatically, the app displays : 
+- at the top at left : the number of babies with the selected first names in the slected city(ies).  
+- at the top at right : the percent of babies with the selected first names in the slected city(ies).  
+- at the bottom at left : the total number of babies in the selected city(ies).   
+- at the bottom at right : the top 10 of first names in the four cities combined.   
+
+On the 3 plots, girls first names appear in pink bars by opposition of boy first names wich appear in blue. We can notice that some first names as "Camille" concern both girls and boys. 
+
+Finally, we can notice that at least one city must be selected.
+
+This R Shiny application has been developed in the context of Coursera Data Products Course Project (more information is disponible at : <https://www.coursera.org/learn/data-products/>) and published in July 18, 2017.  
